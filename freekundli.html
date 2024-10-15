@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Kundli Online</title>
+    <link rel="stylesheet" href="stylesfreekundli.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <video autoplay muted loop class="logo-video">
+                    <source src="KundliGyaan_rotaing.mp4" type="video/mp4">
+                    <!-- Fallback to an image if the video isn't supported -->
+                    <img src="LOGO KG.png" alt="Your Logo">
+                </video>
+            </a>
+        </div>
+        
+        
+        
+        
+            <h1 class="title">Kundli Gyaan</h1>
+            
+             <nav>
+                 <ul>
+                    <li>
+                         <a href="#">Home</a>
+                        <div class="dropdown">
+                                <a href="about-us.html" target="_blank">About Us</a>
+                                <a href="our-story.html" target="_blank">Our Story</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Horoscopes</a>
+                            <div class="dropdown">
+                                <a href="daily-horoscope.html" target="_blank">Daily Horoscopes</a>
+                                <a href="weekly-horoscope.html" target="_blank">Weekly Horoscopes</a>
+                                <a href="monthly-horoscope.html" target="_blank">Monthly Horoscopes</a>
+                                <a href="yearly-horoscope.html" target="_blank">Yearly Horoscopes</a>
+                                <a href="compatibility.html" target="_blank">Zodiac Compatibility</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Free Kundli</a></li>
+                        <li><a href="#">Kundli Matching</a></li>
+                        <li>
+                        <a href="#">Consultations</a>
+                            <div class="dropdown">
+                                <a href="Chat.html" target="_blank">Via Chat </a>
+                                <a href="Call.html" target="_blank">Via Call </a>
+                               
+                            </div>
+                            </li>
+                        <li><a href="#">Blog</a></li>
+                        <li>
+                            <a href="#">Contact us</a>
+                                <div class="dropdown">
+                                    <a href="contactinfo.html" target="_blank">Contact Information</a>
+                                    
+                        
+                                </div>
+                                </li>
+                        
+                    </ul>
+                </nav>
+                
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Free Kundli Online - Get Your Detailed Birth Chart with Predictions</h2>
+            <p>Looking for your free Kundli from expert astrologers? Then you have come to the right place. The online free kundali available on Astrotalk is a 100% free and authentic free Kundli.</p>
+        </section>
+
+        <section>
+            <h2>Free Kundli Online</h2>
+            <h3>Get instant & accurate, Janam Kundli</h3>
+            <img src="LOGO KG.png" alt="Your Logo" width="50" height="50">
+            <p>Free Kundli Online - Get Your Detailed Birth Chart with Predictions</p>
+            <p>Looking for your free Kundli from expert astrologers? Then you have come to the right place. The online free kundali available on Astrotalk is a 100% free and authentic free Kundli that has been prepared after consulting more than 50 expert astrologers on board. The free kundli is such that it can give you a glimpse into various aspects of your life such as your career, love life, marriage, business and much more. The online kundli prepared by the free Kundali software here is no less than any traditional Kundli and can also be used for purposes like matching making, kundali matching for marriage or simply making future predictions.</p>
+            <p>Talking about future predictions, the kundali catered by Astrotalk to you is such that it considers the movement of all the planets in the native's life from the beginning of his or her life till as far as 100 years. Doing so helps you understand the reasons behind not only the ongoing circumstances but also what's to come for you in the future. So if in any way you are confused about life, the online kundli can be your saviour. Having said that, make sure you try the free online kundli, and let us know what you feel about it.</p>
+        </section>
+        <div class="kundli-form">
+            <h2>New Kundli</h2>
+            <form id="kundliForm">
+                <label for="name">Name<span>*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required>
+    
+                <label for="gender">Gender<span>*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+    
+                <div class="birth-details">
+                    <h3>Birth Details</h3>
+                    <label for="day">Day<span>*</span></label>
+                    <select id="day" name="day" required>
+                        <!-- Options for day -->
+                        <script>
+                            for (let i = 1; i <= 31; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+    
+                    <label for="month">Month<span>*</span></label>
+                    <select id="month" name="month" required>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+    
+                    <label for="year">Year<span>*</span></label>
+                    <select id="year" name="year" required>
+                        <!-- Options for year -->
+                        <script>
+                            for (let i = 1900; i <= new Date().getFullYear(); i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+    
+                    <label for="hour">Hour<span>*</span></label>
+                    <select id="hour" name="hour" required>
+                        <!-- Options for hour -->
+                        <script>
+                            for (let i = 0; i < 24; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+    
+                    <label for="minute">Minute<span>*</span></label>
+                    <select id="minute" name="minute" required>
+                        <!-- Options for minute -->
+                        <script>
+                            for (let i = 0; i < 60; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+    
+                    <label for="second">Second<span>*</span></label>
+                    <select id="second" name="second" required>
+                        <!-- Options for second -->
+                        <script>
+                            for (let i = 0; i < 60; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                </div>
+    
+                <label for="birthPlace">Birth Place<span>*</span></label>
+                <input type="text" id="birthPlace" name="birthPlace" placeholder="Enter your birth place" required>
+    
+                <button type="button" onclick="generateHoroscope()">Generate Horoscope</button>
+            </form>
+        </div>
+    
+        <div class="kundli-box">
+            <h2>Saved Kundli</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search kundli by name">
+                <button>
+                    <img src="search-icon.png" alt="Search" />
+                </button>
+            </div>
+            <p class="recently-opened">Recently Opened</p>
+            <p class="no-data">No sufficient data available!</p>
+        </div>
+    
+    
+    <script src="scriptsfreekundli.js"></script>
+</body>
+</html>

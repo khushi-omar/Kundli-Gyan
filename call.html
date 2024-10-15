@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call with Astrologer</title>
+    <link rel="stylesheet" href="stylescall.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <video autoplay muted loop class="logo-video">
+                    <source src="KundliGyaan_rotaing.mp4" type="video/mp4">
+                    <!-- Fallback to an image if the video isn't supported -->
+                    <img src="LOGO KG.png" alt="Your Logo">
+                </video>
+            </a>
+        </div>
+        
+        
+            <h1 class="title">Kundli Gyaan</h1>
+            
+             <nav>
+                 <ul>
+                    <li>
+                         <a href="#">Home</a>
+                        <div class="dropdown">
+                                <a href="aboutus.html">About Us</a>
+                                <a href="our-story.html">Our Story</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Horoscopes</a>
+                            <div class="dropdown">
+                                <a href="dailyhoroscope.html">Daily Horoscopes</a>
+                                <a href="weeklyhoroscope.html">Weekly Horoscopes</a>
+                                <a href="monthlyhoroscope.html">Monthly Horoscopes</a>
+                                <a href="yearlyhoroscope.html">Yearly Horoscopes</a>
+                                <a href="compatibility.html">Zodiac Compatibility</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Free Kundli</a>
+                            <div class="dropdown">
+                                <a href="freekundli.html">Get your kundli</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Kundli Matching</a>
+                            <div class="dropdown">
+                                <a href="kundlimatching.html">Get your kundli</a>
+                            </div></li>
+                        <li>
+                        <a href="#">Consultations</a>
+                            <div class="dropdown">
+                                <a href="Chat.html">Via Chat </a>
+                                <a href="Call.html">Via Call </a>
+                               
+                            </div>
+                            </li>
+                        <li><a href="#">Blog</a>
+                            <div class="dropdown">
+                                <a href="blog.html">Latest blog post's</a></li>
+                        <li>
+                            <a href="#">Contact us</a>
+                                <div class="dropdown">
+                                    <a href="contactus.html" >Contact Information</a>
+                                    
+                                   
+                                </div>
+                                </li>
+                        
+                    </ul>
+                </nav>
+                
+        </div>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h2>Find Your Astrologer for Call</h2>
+            <div>
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="all">All</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+
+                <label for="expertise">Expertise:</label>
+                <select id="expertise">
+                    <option value="all">All</option>
+                    <option value="love">Love</option>
+                    <option value="career">Career</option>
+                </select>
+
+                <button onclick="applyFilters()">Apply Filters</button>
+            </div>
+        </section>
+
+        <section class="astrologer-list">
+            <!-- Astrologer 1 -->
+            <div class="astrologer-card">
+                <img src="astrologer1.jpg" alt="Astrologer 1">
+                <h3>Astrologer A</h3>
+                <p>Expertise: Love, Career</p>
+                <p>Language: English</p>
+                <button onclick="startCall('Astrologer A')">Call Now</button>
+            </div>
+
+            <!-- Astrologer 2 -->
+            <div class="astrologer-card">
+                <img src="astrologer2.jpg" alt="Astrologer 2">
+                <h3>Astrologer B</h3>
+                <p>Expertise: Health, Finance</p>
+                <p>Language: Hindi</p>
+                <button onclick="startCall('Astrologer B')">Call Now</button>
+            </div>
+
+            <!-- Additional astrologers as needed -->
+        </section>
+    </main>
+
+    <script src="scriptscall.js"></script>
+</body>
+</html>

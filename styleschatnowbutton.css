@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efeae3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #a62a2a;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #a62a2a;
+    color: #efeae3;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #700909;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #e7cfb9; /* Light background color */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column; /* Allow body to stack elements vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: visible;
+    text-align: center; /* Center the other elements in the container */
+}
+
+header {
+    background: #efeae3; /* Soft beige background */
+    color: #a62a2a; /* Dark red text */
+    padding: 5px 20px; /* Padding for the header */
+    z-index: 10; /* Ensure header is above other elements */
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: row; /* Horizontal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Ensure nav takes full width */
+    gap: 5px; /* Add gap between logo and title */
+}
+
+.logo {
+    display: flex; /* Align items within the logo container */
+    align-items: center; /* Center vertically */
+}
+
+.logo-image,
+.logo-video {
+    height: 50px; /* Set height for both logo and video */
+    width: auto; /* Keep the aspect ratio */
+    margin-right: 5px; /* Space between logo/video and title */
+}
+
+nav {
+    width: 100%; /* Ensure nav takes full width */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center; /* Center the items */
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+nav a {
+    color: #a62a2a; /* Dark red */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Golden color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Align the dropdown below the parent item */
+    left: 50%;
+    transform: translateX(-50%);
+    right: 20; /* Align to the left */
+    background-color: #efeae3; /* Match the header background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Higher z-index to appear above other elements */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out; /* Smooth transition for dropdown */
+}
+
+nav ul li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #a62a2a;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: rgba(255, 204, 0, 0.2); /* Highlighted background color on hover */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Allow main content to grow */
+    padding: 20px; /* Padding for the main content */
+}
+
+/* Hero Section */
+.hero {
+    background: url('image11.jpj.jpg') no-repeat center center/cover; /* Your image */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #e7cfb9; /* Light background color */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least full height */
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: visible;
+    text-align: center; /* Center the other elements in the container */
+}
+
+
+header {
+    background: #efeae3; /* Soft beige background */
+    color: #a62a2a; /* Dark red text */
+    padding: 5px 20px; /* Padding for the header */
+    z-index: 10; /* Ensure header is above other elements */
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: row; /* Horizontal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Ensure nav takes full width */
+    gap: 5px; /* Add gap between logo and title */
+}
+
+.logo {
+    display: flex; /* Align items within the logo container */
+    align-items: center; /* Center vertically */
+}
+
+.logo-image,
+.logo-video {
+    height: 50px; /* Set height for both logo and video */
+    width: auto; /* Keep the aspect ratio */
+    margin-right: 5px; /* Space between logo/video and title */
+}
+
+nav {
+    width: 100%; /* Ensure nav takes full width */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center; /* Center the items */
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+nav a {
+    color: #a62a2a; /* Dark red */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Golden color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Align the dropdown below the parent item */
+    left: 50%;
+    transform: translateX(-50%);/* Align to the left */
+    background-color: #efeae3; /* Match the header background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Higher z-index to appear above other elements */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #a62a2a;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: rgba(255, 204, 0, 0.2); /* Highlighted background color on hover */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Allow main content to grow */
+    padding: 20px; /* Padding for the main content */
+}
+
+/* Contact Section */
+#contact-info {
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 5px;
+    max-width: 400px;
+    background-color: #f9f9f900;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#contact-info label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact-info input,
+#contact-info textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-info button {
+    background-color: #a62a2a;    
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+     /* Optional: makes the button take full width of the container */
+    max-width: 200px; /* Optional: sets a max width for the button */
+    text-align: center; /* Center text inside the button */
+}
+#contact-info button:hover {
+    background-color: #ffcc00;; /* Darker green on hover */
+}
+
+footer {
+    background: #ab845f; /* Background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for spacing */
+    text-align: center;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Vertically align items */
+    flex-direction: row; /* Align items in a row */
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between; /* Space between copyright and links */
+    align-items: center;
+    width: 100%; /* Take up full width */
+    padding: 0 20px; /* Add padding for space */
+}
+
+footer p {
+    font-size: 1.2em; /* Larger font size for footer */
+    margin: 0; /* Remove margin */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+footer nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox to align horizontally */
+}
+
+footer nav ul li {
+    margin-left: 20px; /* Space between the links */
+}
+
+footer a {
+    color: white; /* White links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Golden color on hover */
+}
+
+/* FAQs */
+.faq-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #dcdcdc; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    margin: 20px auto; /* Centered with margin */
+    width: 80%; /* Responsive width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.faq-item {
+    margin-bottom: 20px; /* Space between FAQ items */
+}
+
+.faq-question {
+    background-color: #a62a2a; /* Dark red background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding for button */
+    margin-bottom: 10px; /* Space between buttons */
+    width: 100%; /* Full width button */
+    text-align: center; /* Center align text */
+    font-size: 1.1em; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.faq-question:hover {
+    background-color: #ffcc00; /* Change color on hover */
+}
+
+.faq-answer {
+    display: none; /* Hide answers initially */
+    padding: 10px; /* Padding for answer */
+    background-color: #ffffff; /* White background for answer */
+    border: 1px solid #dcdcdc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between answers */
+    text-align: justify; /* Justify text for better appearance */
+    color: rgb(142, 142, 142);
+}
+
+/* Subheading styles for FAQ */
+.subheading {
+    display: block; /* Ensure it takes a new line */
+    font-size: 1em; /* Smaller font size for subheading */
+    color: #3a3a3a; /* Gray color for subheading */
+    margin-top: 10px; /* Space between question and subheading */
+    margin-bottom: 10px; /* Space between subheading and answer */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Mobile Styles */
+    header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Full width for mobile */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for nav items */
+    }
+
+    #contact-info {
+        width: 90%; /* Wider on mobile */
+    }
+
+    .faq-section {
+        width: 90%; /* Wider FAQ section on mobile */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet Styles */
+    header {
+        padding: 10px 20px; /* Adjust padding for tablet */
+    }
+
+    nav ul {
+        justify-content: space-between; /* Adjust spacing for tablets */
+    }
+    
+    .faq-section {
+        width: 80%; /* Keep FAQ section responsive */
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Desktop Styles */
+    header {
+        padding: 15px 30px; /* Larger padding for desktops */
+    }
+
+    nav ul {
+        justify-content: flex-end; /* Align items to the right */
+    }
+}
+#contact-info {
+    margin: 50px auto;
+    padding: 20px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    max-width: 800px; /* Set a maximum width for the entire section */
+    background-color: #f9f9f900;
+    justify-content:center;
+    
+}
+
+.contact-container {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Space between the items */
+    align-items: stretch; /* Allow items to stretch to the same height */
+    margin-top: 10px; /* Space above the container */
+}
+
+.contact-details {
+    margin-right: 20px; /* Space between contact details and the form */
+    text-align: center; /* Center text horizontally */
+    border-right: 1px solid #000000; /* Right border line */
+    padding: 20px; /* Padding for visual separation */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    height: auto; /* Allow it to take full height based on the container */
+    flex: 1; /* Allow it to take available space */
+}
+
+.contact-details p {
+    font-size: 1.2em; /* Increase font size for better visibility */
+    margin: 5px 0; /* Add space between lines */
+}
+.contact-item {
+    display: flex; /* Use flexbox for each contact item */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between contact items */
+}
+
+.contact-item span {
+    margin-right: 5px; /* Space between label and value */
+    font-weight: bold; /* Make the label bold */
+}
+
+.contact-details p {
+    font-size: 1.2em; /* Increase font size for better visibility */
+    margin: 5px 0; /* Add space between lines */
+}
+
+
+form {
+    flex: 1; /* Allow the form to take up remaining space */
+    max-width: 400px; /* Set a max width for the form */
+    padding: 20px; /* Optional: padding for the form */
+}
+.title {
+    font-size: 1.8em; /* Adjust size for the title */
+    font-weight: bold; /* Make the title bold */
+    color: #a62a2a; /* Match the text color */
+    margin: 0; /* Remove default margin */
+    white-space: nowrap; /* Prevent title text from wrapping */
+}

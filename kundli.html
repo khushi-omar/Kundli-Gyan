@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Kundli Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <video autoplay muted loop class="logo-video">
+                    <source src="KundliGyaan_rotaing.mp4" type="video/mp4">
+                    <!-- Fallback to an image if the video isn't supported -->
+                    <img src="LOGO KG.png" alt="Your Logo">
+                </video>
+            </a>
+        </div>
+        <h1 class="title">Kundli Gyaan</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <div class="dropdown">
+                        <a href="about-us.html" target="_blank">About Us</a>
+                        <a href="our-story.html" target="_blank">Our Story</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Horoscopes</a>
+                    <div class="dropdown">
+                        <a href="daily-horoscope.html" target="_blank">Daily Horoscopes</a>
+                        <a href="weekly-horoscope.html" target="_blank">Weekly Horoscopes</a>
+                        <a href="monthly-horoscope.html" target="_blank">Monthly Horoscopes</a>
+                        <a href="yearly-horoscope.html" target="_blank">Yearly Horoscopes</a>
+                        <a href="compatibility.html" target="_blank">Zodiac Compatibility</a>
+                    </div>
+                </li>
+                <li><a href="#">Free Kundli</a></li>
+                <li><a href="#">Kundli Matching</a></li>
+                <li>
+                    <a href="#">Consultations</a>
+                    <div class="dropdown">
+                        <a href="Chat.html" target="_blank">Via Chat </a>
+                        <a href="Call.html" target="_blank">Via Call </a>
+                    </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <a href="#">Contact us</a>
+                    <div class="dropdown">
+                        <a href="contactinfo.html" target="_blank">Contact Information</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Free Kundli Online - Get Your Detailed Birth Chart with Predictions</h2>
+            <p>Looking for your free Kundli from expert astrologers? Then you have come to the right place. The online free kundali available on Astrotalk is a 100% free and authentic free Kundli.</p>
+        </section>
+        <div class="kundli-form">
+            <h2>New Kundli</h2>
+            <form>
+                <label for="name">Name<span>*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+                <label for="gender">Gender<span>*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <div class="birth-details">
+                    <h3>Birth Details</h3>
+                    <label for="day">Day<span>*</span></label>
+                    <select id="day" name="day" required>
+                        <!-- Day options (1 to 31) -->
+                    </select>
+
+                    <label for="month">Month<span>*</span></label>
+                    <select id="month" name="month" required>
+                        <!-- Month options -->
+                    </select>
+
+                    <label for="year">Year<span>*</span></label>
+                    <select id="year" name="year" required>
+                        <!-- Year options -->
+                    </select>
+
+                    <label for="hour">Hour<span>*</span></label>
+                    <select id="hour" name="hour" required>
+                        <!-- Hour options (0 to 23) -->
+                    </select>
+
+                    <label for="minute">Minute<span>*</span></label>
+                    <select id="minute" name="minute" required>
+                        <!-- Minute options -->
+                    </select>
+
+                    < label for="place">Place of Birth<span>*</span></label>
+                    <input type="text" id="place" name="place" placeholder="Enter Place of Birth" required>
+                </div>
+
+                <button type="submit">Get Kundli</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/astrotalk/" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/astrotalk" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/astrotalk/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/astrotalk/" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p>&copy; 2023 Astrotalk. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

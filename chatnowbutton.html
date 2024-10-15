@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrologer Intake Form</title>
+    <link rel="stylesheet" href="styleschatnowbutton.css">
+</head>
+<header>
+        <div class="logo">
+            <a href="index.html">
+                <video autoplay muted loop class="logo-video">
+                    <source src="KundliGyaan_rotaing.mp4" type="video/mp4">
+                    <!-- Fallback to an image if the video isn't supported -->
+                    <img src="LOGO KG.png" alt="Your Logo">
+                </video>
+            </a>
+        </div>
+        
+        
+            <h1 class="title">Kundli Gyaan</h1>
+            
+             <nav>
+                 <ul>
+                    <li>
+                         <a href="#">Home</a>
+                        <div class="dropdown">
+                                <a href="aboutus.html">About Us</a>
+                                <a href="our-story.html">Our Story</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Horoscopes</a>
+                            <div class="dropdown">
+                                <a href="dailyhoroscope.html">Daily Horoscopes</a>
+                                <a href="weeklyhoroscope.html">Weekly Horoscopes</a>
+                                <a href="monthlyhoroscope.html">Monthly Horoscopes</a>
+                                <a href="yearlyhoroscope.html">Yearly Horoscopes</a>
+                                <a href="compatibility.html">Zodiac Compatibility</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Free Kundli</a>
+                            <div class="dropdown">
+                                <a href="freekundli.html">Get your kundli</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Kundli Matching</a>
+                            <div class="dropdown">
+                                <a href="kundlimatching.html">Get your kundli</a>
+                            </div></li>
+                        <li>
+                        <a href="#">Consultations</a>
+                            <div class="dropdown">
+                                <a href="Chat.html">Via Chat </a>
+                                <a href="Call.html">Via Call </a>
+                               
+                            </div>
+                            </li>
+                        <li><a href="#">Blog</a>
+                            <div class="dropdown">
+                                <a href="blog.html">Latest blog post's</a></li>
+                        <li>
+                            <a href="#">Contact us</a>
+                                <div class="dropdown">
+                                    <a href="contactus.html" >Contact Information</a>
+                                    
+                                   
+                                </div>
+                                </li>
+                        
+                    </ul>
+                </nav>
+                
+        </div>
+    </header>
+
+<body>
+    <div class="container">
+        <h1>Chat Intake Form</h1>
+        <p>Please fill out the following details to start your chat with the astrologer.</p>
+
+        <form id="intakeForm" onsubmit="handleSubmit(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="pob">Place of Birth:</label>
+            <input type="text" id="pob" name="pob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="concern">Primary Concern:</label>
+            <select id="concern" name="concern" required>
+                <option value="love">Love</option>
+                <option value="career">Career</option>
+                <option value="health">Health</option>
+                <option value="finance">Finance</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="scriptschatnowbutton.js"></script>
+</body>
+</html>
